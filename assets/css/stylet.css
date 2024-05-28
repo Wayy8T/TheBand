@@ -1,0 +1,299 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#nav, .subnav {
+    list-style-type: none;
+}
+
+
+html {
+    font-family: "Lato", sans-serif;
+}
+
+#main {
+
+}
+
+#header {
+    height: 46px;
+    top:0px;
+    width: 100%;
+    background-color: black;
+    position: fixed;
+    z-index: 1;
+}
+
+#nav {
+
+}
+
+#nav > li{
+    display: inline-block;
+    position: relative;
+    text-decoration: none;
+}
+
+#nav > li > a
+{
+    color: white;
+}
+
+#nav li a{
+    
+    text-decoration: none;
+    line-height: 46px;
+    padding-left: 24px;
+    padding-right: 24px;
+}
+
+#nav > li:hover > a {
+    background-color: #ccc;
+    color: black;
+    display: inline-block;
+}
+
+#nav .subnav li {
+    background-color: #fff;
+}
+
+#nav .subnav li:hover {
+    background-color: #ccc;
+    color: black;
+}
+
+#nav .subnav {
+    position: absolute;
+}
+
+/* hover và hiện ra nút bên dưới more */
+#nav li:hover .subnav a {
+    display: block;
+}
+
+/* Thêm v vào MORE */
+.ti-angle-down {
+    font-size: 14px;
+    margin: 0 0px;
+}
+
+/* Search */
+
+#nav .ti-search {
+    position: fixed;
+    right: 0px;
+    top: 0px;
+}
+
+#nav .ti-search:hover {
+    background-color: red;
+    color: #fff;
+    /* hình trỏ chuột, bàn tay */
+    cursor: pointer;
+}
+
+#nav .subnav a {
+    color: black;
+    display: none;
+}
+
+#slider {
+    margin-top: 46px;
+    min-height: 100%;
+    background-color: #333;
+    position: relative;
+}
+
+#slider .writing{
+    position: absolute;
+    bottom: 0; /* Đặt ở dưới cùng của phần tử cha */
+     /* Di chuyển 50% theo trục x của phần tử cha */
+
+    list-style-type: none;
+    margin-bottom: 47px;
+    text-align: center;
+    width: 100%;
+}
+
+#slider .writing .w1 a {
+    font-size: 25px;
+    color: white;
+    text-decoration: none;   
+}
+
+#slider .writing .w1 {
+    margin-bottom: 25px;
+}
+
+#slider .writing .w2 a {
+    
+    font-size: 15px;
+    color: white;
+    text-decoration: none;
+}
+
+
+
+#content {
+
+}
+
+/* About */
+
+#content .about {
+    padding-top: 64px;
+    padding-bottom: 64px;
+    padding-left: 16px;
+    padding-right: 16px;
+    margin: 0 337px;
+    text-align: center;
+}
+#content .about .Text-heading2 {
+    margin-top: 25px;
+    margin-bottom: 15px;
+    font-size: 15px;
+    font-weight: 200;
+    font-style: italic;
+    color: #808080; 
+}
+
+#content .about .Text-heading1 {
+    font-weight: 400;
+    font-size: 30px;
+    font-family: "Segoe UI", Arial, sans-serif;
+}
+
+#content .about .Text-description {
+    text-align: left;
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+
+#content .about .listImage {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    
+}
+
+.about .listImage > div {
+    display: inline-block;
+}
+
+.listImage .listImage1 .name {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+.about .listImage {
+    justify-content: space-between;
+}
+
+.listImage1 .image img {
+    height: 154px;
+    width: 154px;
+    border-radius: 5px;
+    margin: 0 47px;
+    margin-bottom: 16px;
+}
+
+/* Tour */
+#content .Tour {
+    background-color: #000!important;
+   
+   
+}
+
+#content .Tour .subTour {
+    text-align: center;
+    padding: 64px 16px 64px 16px;
+    margin-left: 337px;
+    margin-right: 337px;
+}
+
+
+#content .Tour .Text_tourheading1 {
+    color: #fff;
+    font-size: 30px;
+    font-family: "Segoe UI",Arial,sans-serif;
+    font-weight: 350;
+}
+
+#content .Tour .Text-tourheading2 {
+    color: #bdbcbceb;
+    font-weight: 100;
+    font-family: "Lato", sans-serif;
+    font-style: italic;
+    font-size: 15px;
+    margin-top: 25px;
+    margin-bottom: 15px;
+}
+
+#content .Tour .text-hint {
+    position: relative;
+    list-style-type: none;  
+    text-align: left;
+    padding: 10px 16px 10px 16px;
+    background-color: #fff;
+    color: #383737d2;
+    font-size: 15px;   
+    border-bottom: rgb(221, 221, 221) solid 0.8px;
+    
+}
+
+.table-text .text-hint .cout-tour {
+    position: absolute;
+    color: white;
+    background-color: #000;
+    Border-radius: 15px;
+    margin-right: 16px;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    right: 10px;    
+    
+
+}
+
+.subTour .table-text .text-out {
+   
+    background-color: #f44336!important;
+    color: #fff;
+    margin-left: 16px;
+    padding: 0px 8px 0px 8px;
+    text-align: center;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    
+}
+
+/* Tour -> location */
+#content .Tour .tour-location {
+    padding: 32px 8px 32px 8px;
+    margin-left: -16px;
+    margin-right: -16px;
+}
+
+.Tour .tour-location .tour-subLocation {
+    width: 262px;
+    height: 388px;
+    padding-left: 8px;
+    padding-right: 8px;
+    margin-bottom: 16px;
+    /* float: left; */
+}
+.tour-location .tour-subLocation .sublocation {
+    padding-top: 75%;
+}
+
+
+#footer {
+
+}
+
+/* css */
+/* css cursor property */
